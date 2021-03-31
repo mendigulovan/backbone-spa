@@ -1,0 +1,150 @@
+/* Base styles */
+    body, *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color:#f0e68c;
+        font-family:'Courier New', Courier, monospace;
+        line-height: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        line-height: 1em;
+    }
+
+    a, a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    em {
+        font-weight: bold;
+    }
+
+    small {
+        font-size: 0.8em;
+    }
+/* Layout */
+    .l-padding {
+        padding: 1em;
+    }
+
+    .l-sidebar {
+        width: 250px;
+    }
+
+    .l-content {
+        padding: 1em;
+        overflow: hidden;
+    }
+
+    .l-content-constrained {
+        padding-left: 270px;
+    }
+
+/* Reusable classes */
+
+    .cf {
+        overflow: hidden;
+    }
+
+    .standout {
+        background-color:#fafcae;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+        background-color: #000;
+        opacity: 0.4;
+    }
+
+    .logo {
+        font-family: 'New Tegomin', serif;
+    }
+
+        .logo h1 {
+            display: inline-block;
+            margin-right: 0.5em;
+        }
+    
+    .logo-sub {
+        color: #333;
+        font-size: 0.7em;
+        font-weight: 100;
+    }
+
+    .topbar {
+        background-color: #fff;
+    }
+
+    .topbar-img {
+        height: 3em;
+        width: 2em;
+    }
+
+    .topbar-title {
+        font-family: 'New Tegomin', serif;
+        font-weight: 300;
+        color: #fff;
+        background-color:#f0a608;
+        float: left;
+    }
+
+    .topbar-title > i {
+        font-size: 1.5em;
+        margin-right: 0.5em;
+    }
+
+    .topbar-title h2 {
+        display: inline-block;
+    }
+
+    .categories {
+        position: absolute;
+        z-index: 100;
+        font-size: 1.2em;
+        line-height: 2em;
+        padding: 0.5em;
+    }
+
+    .categories a {
+        color: #444;
+        display: block;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .categories a:hover {
+        background-color: #e5e5e5;
+    }
+
+    .thumb {
+        float: left;
+        height: 207px;
+        margin: 0.5em 0.2em;
+    }
+
+    img {
+        height: 150px;
+        width: 220px;
+    }
+
+    .thumb-link {
+        display: block;
+        position: relative;
+    }
+
+    .thumb-link:hover > .overlay {
+        display: block;
+
+    }

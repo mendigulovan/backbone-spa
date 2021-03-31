@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Backbone.Router example</title>
+    <meta charset="utf-8">
+    <title>Ghibli World</title>
 
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href='https://fonts.googleapis.com/css?family=New Tegomin' rel='stylesheet' type='text/css'> 
+    <link rel="stylesheet" href="css/main.css"> 
+    
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://jashkenas.github.io/underscore/underscore-min.js"></script>
     <script src="http://jashkenas.github.io/backbone/backbone-min.js"></script>
 </head>
 <body>
+    <!--SPA with Studio Ghibli API documentation-->
+    <header>
+        <div class="l-padding">
+            <span class="logo">
+                <h1>Ghibli <span class="logo-sub">world</span></h1>
+            </span>
+        </div>
+        <div class="topbar cf">
+            <span class="topbar-title l-sidebar l-padding">
+                <img class="topbar-img" src="img/totoro.png"></img>
+                <h2>Films</h2>
 
-    <div id="content">
+            </span>
+        </div>
+    </header>
+
+    <div class="categories l-sidebar standout">
+        <ul>
+            <li><a href="">All</a></li>
+            <li><a href="">People</a></li>
+            <li><a href="">Locations</a></li>
+            <li><a href="">Species</a></li>
+            <li><a href="">Vehicles</a></li>
+        </ul>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="films l-content l-content-constrained">
+            <ul>
+                <li class="thumb">
+                    <a class="thumb-link" href="#">
+                        <img src="https://thevinylfactory.com/wp-content/uploads/2020/04/Studio-Ghibli-Princess-Mononoke-soundtrack-vinyl.jpg" alt="Princess Mononoke">
+                    </a>
+                </li>
+                <li class="thumb">  
+                    <a class="thumb-link" href="#">
+                        <span class="overlay"></span>
+                        <img src="https://cdn.britannica.com/83/212183-050-3B16E7AD/Spirited-Away-Hayao-Miyazaki-Studio-Ghibli-movie-still-2001.jpg" alt="Spirited Away">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="film"></div>
     </div>
 
     <script src="js/app.js"></script>
