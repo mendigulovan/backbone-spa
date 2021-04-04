@@ -49,6 +49,16 @@
         padding-left: 270px;
     }
 
+    .l-column {
+        display: table-cell;
+        vertical-align: top;
+    }
+
+    .l-row {
+        display: table;
+        width: 100%;
+    }
+
 /* Reusable classes */
 
     .cf {
@@ -65,7 +75,7 @@
         height: 100%;
         display: none;
         background-color: #000;
-        opacity: 0.4;
+        opacity: 0.3;
     }
 
     .logo {
@@ -125,7 +135,7 @@
     }
 
     .categories a:hover {
-        background-color: #e5e5e5;
+        background-color: #faca64;
     }
 
     .thumb {
@@ -147,4 +157,28 @@
     .thumb-link:hover > .overlay {
         display: block;
 
+    }
+
+    .films, 
+    .film {
+        display: none;
+    }
+
+    .film-header {
+        border-bottom: 2px solid #ccc;
+    }
+
+    .title {
+        font-size: 1.8em;
+        line-height: 1em;
+        padding-bottom: 0.2em;
+    }
+
+    .thumb-image {
+        width: 220px;
+    }
+
+    /* State classes */
+    .is-visible {
+        display: block;
     }

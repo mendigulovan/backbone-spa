@@ -24,27 +24,27 @@
             <span class="topbar-title l-sidebar l-padding">
                 <img class="topbar-img" src="img/totoro.png"></img>
                 <h2>Films</h2>
-
             </span>
         </div>
     </header>
 
     <div class="categories l-sidebar standout">
         <ul>
-            <li><a href="">All</a></li>
-            <li><a href="">People</a></li>
-            <li><a href="">Locations</a></li>
-            <li><a href="">Species</a></li>
-            <li><a href="">Vehicles</a></li>
+            <li><a href="#category/films">All</a></li>
+            <li><a href="#category/people">People</a></li>
+            <li><a href="#category/locations">Locations</a></li>
+            <li><a href="#category/species">Species</a></li>
+            <li><a href="#category/vehicles">Vehicles</a></li>
         </ul>
 
     </div>
 
-    <div class="wrapper">
-        <div class="films l-content l-content-constrained">
+    <div class="wrapper" data-id="films-wrapper">
+        <div class="films l-content l-content-constrained" data-id="films-list">
             <ul>
                 <li class="thumb">
                     <a class="thumb-link" href="#">
+                        <span class="overlay"></span>
                         <img src="https://thevinylfactory.com/wp-content/uploads/2020/04/Studio-Ghibli-Princess-Mononoke-soundtrack-vinyl.jpg" alt="Princess Mononoke">
                     </a>
                 </li>
@@ -56,9 +56,27 @@
                 </li>
             </ul>
         </div>
-        <div class="film"></div>
+        <div class="film">
+            <header class="film-header l-content l-content-constrained l-row">
+                <div class="l-column thumb-image">
+                    <img src="https://cdn.britannica.com/83/212183-050-3B16E7AD/Spirited-Away-Hayao-Miyazaki-Studio-Ghibli-movie-still-2001.jpg" alt="Spirited Away">
+                </div>
+                <div class="l-column l-padding">
+                <div class="title">Spirited Away</div>
+                <div><em>Hayao Miyazaki</em> Date<br>Ghibli</div>
+                </div>
+            </header>
+            <div class="content l-content l-content-constrained standout">
+                <h1 class="title">Description</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae itaque quos illo dolorem facilis ducimus reprehenderit porro, soluta impedit placeat sint deserunt? Suscipit exercitationem rerum a at, eaque perspiciatis ex?</p>
+            </div>
+        </div>
     </div>
 
-    <script src="js/app.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/routers/Router.js"></script>
+    <script src="js/models/Films.js"></script>
+    <script src="js/views/ContentList.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
