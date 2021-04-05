@@ -22,9 +22,10 @@ app.routers.Router = Backbone.Router.extend({
         });
 
         this._activateFilmsPanel();
-        $(['data-id=films-list']).append(app.data.currentView.$el);
+        $('[data-id = "films-list"]').empty().append(app.data.currentView.$el);
+        //$(['data-id="films-list"']).append(app.data.currentView.$el);
 
-        app.data.films.fetch({reset: true}); //fetch will triger the loading of the data from the server
+        app.data.films.fetch({reset: true}); //fetch will triger the loading of the data from the server*/
     },
 
     film: function(id, filmId){
