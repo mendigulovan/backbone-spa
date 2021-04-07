@@ -145,10 +145,6 @@
        
     }
 
-    title {
-        font-family: 'New Tegomin', serif;
-    }
-
     img {
         height: 150px;
         width: 220px;
@@ -174,6 +170,7 @@
     }
 
     .title {
+        font-family: 'New Tegomin', serif;
         font-size: 1.8em;
         line-height: 1em;
         padding-bottom: 0.2em;

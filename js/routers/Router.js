@@ -29,7 +29,9 @@ app.routers.Router = Backbone.Router.extend({
     },
 
     film: function(id, filmId){
-        app.data.film = new app.models.Book({id: filmId});
+        console.log("film " + filmId + " for category " + id);
+
+        app.data.film = new app.models.Film({id: filmId});
 
         this._cleanupCurrentView();
         app.data.currentView = new app.views.FilmDetail({

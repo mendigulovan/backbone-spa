@@ -1,0 +1,26 @@
+{
+    "id": "ea660b10-85c4-4ae3-8a5f-41cea3648e3e",
+    "title": "Kiki's Delivery Service",
+    "original_title": "魔女の宅急便",
+    "original_title_romanised": "Majo no takkyūbin",
+    "description": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
+    "director": "Hayao Miyazaki",
+    "producer": "Hayao Miyazaki",
+    "release_date": "1989",
+    "running_time": "102",
+    "rt_score": "96",
+    "image":"https://i.guim.co.uk/img/media/aa5f12bac3ba95322c58929eab0303262dc20340/321_175_1509_905/master/1509.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=242ea5b7b0adae22bb80a3161a6c337f",
+    "people": [
+      "https://ghibliapi.herokuapp.com/people/"
+    ],
+    "species": [
+      "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+    ],
+    "locations": [
+      "https://ghibliapi.herokuapp.com/locations/"
+    ],
+    "vehicles": [
+      "https://ghibliapi.herokuapp.com/vehicles/"
+    ],
+    "url": "https://ghibliapi.herokuapp.com/films/ea660b10-85c4-4ae3-8a5f-41cea3648e3e"
+  }

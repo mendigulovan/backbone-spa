@@ -1,0 +1,26 @@
+{
+    "id": "90b72513-afd4-4570-84de-a56c312fdf81",
+    "title": "The Cat Returns",
+    "original_title": "猫の恩返し",
+    "original_title_romanised": "Neko no ongaeshi",
+    "description": "Haru, a schoolgirl bored by her ordinary routine, saves the life of an unusual cat and suddenly her world is transformed beyond anything she ever imagined. The Cat King rewards her good deed with a flurry of presents, including a very shocking proposal of marriage to his son! Haru embarks on an unexpected journey to the Kingdom of Cats where her eyes are opened to a whole other world.",
+    "director": "Hiroyuki Morita",
+    "producer": "Toshio Suzuki",
+    "release_date": "2002",
+    "running_time": "75",
+    "rt_score": "89",
+    "image":"https://images-na.ssl-images-amazon.com/images/S/sgp-catalog-images/region_US/m7txl-TEQ33GV6M7R-Full-Image_GalleryBackground-en-US-1581442842569._RI_.jpg",
+    "people": [
+      "https://ghibliapi.herokuapp.com/people/"
+    ],
+    "species": [
+      "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2"
+    ],
+    "locations": [
+      "https://ghibliapi.herokuapp.com/locations/"
+    ],
+    "vehicles": [
+      "https://ghibliapi.herokuapp.com/vehicles/"
+    ],
+    "url": "https://ghibliapi.herokuapp.com/films/90b72513-afd4-4570-84de-a56c312fdf81"
+  }

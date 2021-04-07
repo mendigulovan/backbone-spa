@@ -20,7 +20,7 @@ app.views.ContentList = Backbone.View.extend ({
                 $ul.append(
                     '<li class="thumb">'+
                         (model.get("title") || model.get("name"))+
-                        '<p>'+model.get("release_date")+'</p>'+              
+                        '<p>'+model.get("release_date")+" "+model.get("director")+'</p>'+              
                         '<a class="thumb-link" href="'+ filmPath+model.get("id")+'">'+                   
                             '<span class="overlay"></span>'+
                             '<img src="'+model.get("image")+'">'+                                                      
