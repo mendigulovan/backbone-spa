@@ -1,0 +1,67 @@
+[
+    {
+      "id": "fe93adf2-2f3a-4ec4-9f68-5422f1b87c01",
+      "name": "Pazu",
+      "gender": "Male",
+      "age": "13",
+      "eye_color": "Black",
+      "hair_color": "Brown",
+      "films": [
+        "https://ghibliapi.herokuapp.com/films/2baf70d1-42bb-4437-b551-e5fed5a87abe"
+      ],
+      "species": "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2",
+      "url": "https://ghibliapi.herokuapp.com/people/fe93adf2-2f3a-4ec4-9f68-5422f1b87c01"
+    },
+    {
+        "id": "ba924631-068e-4436-b6de-f3283fa848f0",
+        "name": "Ashitaka",
+        "gender": "Male",
+        "age": "late teens",
+        "eye_color": "Brown",
+        "hair_color": "Brown",
+        "films": [
+          "https://ghibliapi.herokuapp.com/films/0440483e-ca0e-4120-8c50-4c8cd9b965d6"
+        ],
+        "species": "https://ghibliapi.herokuapp.com/species/af3910a6-429f-4c74-9ad5-dfe1c4aa04f2",
+        "url": "https://ghibliapi.herokuapp.com/people/ba924631-068e-4436-b6de-f3283fa848f0"
+      },
+      {
+        "id": "7151abc6-1a9e-4e6a-9711-ddb50ea572ec",
+        "name": "Jiji",
+        "gender": "Male",
+        "age": "NA",
+        "eye_color": "Black",
+        "hair_color": "Black",
+        "films": [
+          "https://ghibliapi.herokuapp.com/films/ea660b10-85c4-4ae3-8a5f-41cea3648e3e"
+        ],
+        "species": "https://ghibliapi.herokuapp.com/species/603428ba-8a86-4b0b-a9f1-65df6abef3d3",
+        "url": "https://ghibliapi.herokuapp.com/people/7151abc6-1a9e-4e6a-9711-ddb50ea572ec"
+      },
+      {
+        "id": "d39deecb-2bd0-4770-8b45-485f26e1381f",
+        "name": "Totoro",
+        "gender": "NA",
+        "age": "",
+        "eye_color": "Grey",
+        "hair_color": "Grey",
+        "films": [
+          "https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49"
+        ],
+        "species": "https://ghibliapi.herokuapp.com/species/74b7f547-1577-4430-806c-c358c8b6bcf5",
+        "url": "https://ghibliapi.herokuapp.com/people/d39deecb-2bd0-4770-8b45-485f26e1381f"
+      },
+      {
+        "id": "f467e18e-3694-409f-bdb3-be891ade1106",
+        "name": "Catbus",
+        "gender": "Male",
+        "age": "NA",
+        "eye_color": "Yellow",
+        "hair_color": "Brown",
+        "films": [
+          "https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49"
+        ],
+        "species": "https://ghibliapi.herokuapp.com/species/603428ba-8a86-4b0b-a9f1-65df6abef3d3",
+        "url": "https://ghibliapi.herokuapp.com/people/f467e18e-3694-409f-bdb3-be891ade1106"
+      }
+    ]

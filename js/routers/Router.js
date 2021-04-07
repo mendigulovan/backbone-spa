@@ -29,7 +29,17 @@ app.routers.Router = Backbone.Router.extend({
     },
 
     film: function(id, filmId){
-        console.log("film"+ film)
+        app.data.film = new app.models.Book({id: filmId});
+
+        this._cleanupCurrentView();
+        app.data.currentView = new app.views.FilmDetail({
+            model: app.data.film
+        });
+
+        this._activateFilmDetailPanel();
+        $('[data-id = "film"]').empty().append(app.data.currentView.$el);
+
+        app.data.film.fetch();
     },
 
     unknown: function(){
@@ -41,7 +51,7 @@ app.routers.Router = Backbone.Router.extend({
         $('[data-id = films-list]').addClass('is-visible');
     },
 
-    _activateFilmDetailPanel: function(selector) {
+    _activateFilmDetailPanel: function() {
         $('[data-id = "films-wrapper"].is-visible').removeClass('is-visible');
         $('[data-id = film]').addClass('is-visible');
     },

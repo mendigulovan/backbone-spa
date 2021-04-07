@@ -17,31 +17,20 @@ app.views.ContentList = Backbone.View.extend ({
 
        
         this.collection.each(function(model){
-            if(model.get("title")){
                 $ul.append(
-                    '<li class="thumb">'+model.get("title")+             
+                    '<li class="thumb">'+
+                        (model.get("title") || model.get("name"))+
+                        '<p>'+model.get("release_date")+'</p>'+              
                         '<a class="thumb-link" href="'+ filmPath+model.get("id")+'">'+                   
                             '<span class="overlay"></span>'+
-                            '<p>'+model.get("description")+'</p>'+
-                            
+                            '<img src="'+model.get("image")+'">'+                                                      
                         '</a>'+
                     '</li>'
                 );
-            } else {
-                $ul.append(
-                    '<li class="thumb">'+ model.get("name")+             
-                        '<a class="thumb-link" href="'+ filmPath+model.get("id")+'">'+                   
-                            '<span class="overlay"></span>'+
-                            '<p>'+model.get("films")+'</p>'+
-                            '<img src="">'+
-                        '</a>'+
-                    '</li>'
-                );
-            }
         });
 
         
         return this;
-    },
+    }
 
 });

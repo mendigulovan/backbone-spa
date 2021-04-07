@@ -5,6 +5,6 @@ app.models.Films = Backbone.Collection.extend ({
     },
 
     url: function(){
-        return 'https://ghibliapi.herokuapp.com/' + this.options.catId;
+        return 'api/' + this.options.catId+'.json';
     }
 });
