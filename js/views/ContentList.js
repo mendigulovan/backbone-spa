@@ -10,7 +10,7 @@ app.views.ContentList = Backbone.View.extend ({
     render: function(){
         console.log("List: render");
 
-        this.$el.html('<ul></ul>');
+        this.$el.html('<ul class="thumbs"></ul>');
         var $ul = this.$('ul'); //only within $el
 
         var filmPath = "#category/" + this.collection.catId + "/film/";

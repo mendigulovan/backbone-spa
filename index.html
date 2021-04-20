@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1, maximum-scale = 1">
     <title>Ghibli World</title>
 
     <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
@@ -20,25 +21,26 @@
                 <h1>Ghibli <span class="logo-sub">world</span></h1>
             </span>
         </div>
-        <div class="topbar cf">
+        <div class="topbar cf" data-id="topbar">
             <span class="topbar-title l-sidebar l-padding">
+                <a class="cat-toggle" data-id="cat-toggle" href="#"><img class="topbar-img" src="img/mobile-menu-icon-orange.png"></a>
                 <img class="topbar-img" src="img/totoro.png"></img>
                 <h2>Films</h2>
             </span>
+
+            <div class="categories l-sidebar standout" data-id="categories">
+                <ul>
+                    <li><a data-id="cat" href="#category/films">All</a></li>
+                    <li><a data-id="cat" href="#category/people">People</a></li>
+                </ul>
+        
+            </div>        
         </div>
     </header>
 
-    <div class="categories l-sidebar standout">
-        <ul>
-            <li><a href="#category/films">All</a></li>
-            <li><a href="#category/people">People</a></li>
-        </ul>
-
-    </div>
-
     <div class="wrapper" data-id="films-wrapper">
         <div class="films l-content l-content-constrained" data-id="films-list">
-            <ul>
+            <ul class="thumbs">
                 <li class="thumb">
                     <a class="thumb-link" href="#">
                         <span class="overlay"></span>
@@ -87,6 +89,7 @@
     <script src="js/models/Film.js"></script>
     <script src="js/views/ContentList.js"></script>
     <script src="js/views/FilmDetail.js"></script>
+    <script src="js/views/TopBar.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
