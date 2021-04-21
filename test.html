@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli World Unit Tests</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.0.1/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.0.1/mocha.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/1.10.0/chai.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sinon.js/1.7.3/sinon.min.js"></script>
+</head>
+<body>
+    <div id="mocha"></div>
+
+    <script>
+        mocha.setup("bdd");
+        expect = chai.expect;
+        assert = chai.assert;
+
+        window.onload = function() {
+            window.mocha.run();
+        }
+    </script>
+    <script type="text/html" data-id="film-detail-view">
+        <header class="film-header l-content l-content-constrained l-row">
+            <div class="l-column thumb-image">
+               <img src="<%= this.model.get('image')%>">
+            </div>
+            <div class="l-column l-padding">
+                <div data-id="title" class="title"><%= this.model.get("title") %></div>
+                <div class="title"><%= this.model.get("original_title") %></div>
+                <div><em><%= this.model.get("director") %></em><%= this.model.get("release_date") %>
+                <br><%= this.model.get("rt_score") %></div>
+            </div>
+        </header>
+        <div class="content l-content l-content-constrained standout">
+            <div class="title">Description</div>
+            <p><%= this.model.get("description") %></p>
+        </div>
+    </script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/routers/Router.js"></script>
+    <script src="js/models/Films.js"></script>
+    <script src="js/models/Film.js"></script>
+    <script src="js/views/ContentList.js"></script>
+    <script src="js/views/FilmDetail.js"></script>
+    <script src="js/views/TopBar.js"></script>
+    <script src="test/tests.js"></script>
+</body>
+</html>
